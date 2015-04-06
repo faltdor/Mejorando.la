@@ -16,12 +16,13 @@ function agregarPos(){
 	
 	$clone = $post.clone();
 
-		$clone.find('.titulo_item a')
+	$clone.find('.titulo_item a')
 			  .text(titulo)
 			  .attr('href',url);
-		$clone.hide();
+	
+	$clone.hide();
 	$list.prepend($clone);
-		$clone.fadeIn();
+	$clone.fadeIn();
 
 	return false;
 }
