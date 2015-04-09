@@ -1,0 +1,34 @@
+/*etiqueta  header
+  Descendente	header nav
+  por id 	   #id			
+  de clases    .clase 
+  pseudo selector  ul > li
+  adyacente   section + section
+  atributos	 [href="#yo"]	todos los que tenga yo en el href
+*/
+.u-title{
+	color: red;
+}
+
+.Header{
+
+}
+.Header-imageContainer{
+
+}
+
+.MainMenu{
+
+}
+
+.Profile{
+	
+}
+
+.Work{
+	
+}
+
+.Footter{
+	
+}
