@@ -5,30 +5,162 @@
   pseudo selector  ul > li
   adyacente   section + section
   atributos	 [href="#yo"]	todos los que tenga yo en el href
+
+	Display - block por defecto , todo el espacio de la pagina
+			  inline-block , se ajusta al tamaño de su contenido	
+
 */
+
+
+
+
 .u-title{
-	color: red;
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: .5em;
 }
 
 .Header{
-
+	margin-top: 3.75em;
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 1.2em 0;
 }
 .Header-imageContainer{
+	margin: 0;
+}
+.Header-image{
+	border: 5px solid white;
+	border-radius: 50%;
 
 }
+.Header-name,.Header-link{
+	color: white;
+}
+.Header-link{
+	font-size: 2.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Header-name{
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0;
+}
+
 
 .MainMenu{
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em; /*  60px / 16px  ,quiero 60px de alto y por defecto la fuente es 16px */
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 
 }
+.MainMenu-list{
+	margin: 0;
+	padding:0;
+}
+
+.MainMenu-item{
+	display: inline-block;
+}
+.MainMenu-link{
+	color: #00DBFF;
+	text-decoration: none;
+	line-height: 2.75em;
+	margin-right: 1.5em;
+}
+
 
 .Profile{
-	
+	text-align: center;
+}
+
+.Profile-link{
+	background: orange;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
 }
 
 .Work{
-	
+	margin-top: 2em;
+	text-align: center;
+
 }
 
+.Work-item{
+	display: inline-block;
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+	margin: 0;
+
+}
+.Work-image{
+	margin: 0;
+}
+
+.Work-description{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;;
+}
 .Footter{
-	
+	background-image: url("../images/footer.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+
+}
+
+.Footter-form {
+	text-align: center;
+	display: inline-block;
+
+}
+
+.Footter-formInput,.Footter-textarea{
+	background: white;
+	border: none;
+	display: block;
+	margin-bottom: 1em; 
+	border-radius:2em;
+	padding: .5em;
+	margin: 0 auto 1em;
+
+}
+
+.Footter-textarea{
+	resize:none;
+}
+
+.Footter-button{
+	background: orange;
+	color: white;
+	border-radius: 1em;
+	border: none;
+
+}
+.Footter-title{
+
+}
+
+.Footer-left{
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+	vertical-align: top;
+
 }
