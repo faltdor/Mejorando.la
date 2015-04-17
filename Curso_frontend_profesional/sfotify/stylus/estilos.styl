@@ -1,13 +1,18 @@
 @import "normalize.styl"
+@import "fonts.styl"
 
 gris_oscuro = #333333
 gris_claro = #818181
+rojo = #BD255B
 
 a 
 	text-decoration none
 
 h1
 	color: red;
+
+img
+	vertical-align top 
 
 body 
 	font-size 16px
@@ -17,13 +22,17 @@ body
 	border-bottom 1px solid gris_claro
 
 .button-menu
+	color gris_oscuro
+	left .5em
+	margin-top -10px
 	position absolute
+	top 50%
 
 .relative
+	left .5em
+	margin-top -10px
 	position relative
 	top 50%
-	margin-top -10px
-	left .5em
 
 .container
 	padding 1.4rem
@@ -60,3 +69,74 @@ body
 	p
 		margin .5em 0
 	
+	.playing
+		&.small 
+			width 20em
+.center-block
+	margin 0 auto
+	
+.center-text
+	text-align center
+	
+.actions
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	background rgba(0,0,0,.3)
+	
+.relative
+	position relative
+
+.padding
+	padding 1em
+
+.action
+	color white
+	margin-right .5em
+	font-size 1.2em
+	&:last-child
+		margin-right 0
+	&.gray
+		color gris_claro
+	
+	
+.right-text
+	text-align right
+	
+.progress
+	margin 1em 0
+	position relative
+	.min 
+	.max
+		font-size .8rem
+		top -5px
+	.min
+		position absolute
+		left 0
+	.max
+		right 0
+	
+	.total
+		height 5px
+		background gris_claro
+		width 75%
+		border-radius 5px
+		margin 0 auto
+	.state
+			height 5px
+			background rojo
+			width 30%
+			border-radius 5px
+			position relative
+	.circle
+			height 10px
+			background gris_oscuro
+			width 10%
+			border-radius 50%
+			position absolute
+			right 0
+			top -2px
+
+.padding-tb
+	padding 1em 0
